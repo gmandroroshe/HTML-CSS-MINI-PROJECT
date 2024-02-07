@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreChip</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+<!--============header=============-->
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/logo.png"  class="logo">
+                <ul>
+                    <li><a href="#"></a>Home</li>
+                    <li><a href="#"></a>About</li>
+                    <li><a href="#"></a>Services</li>
+                    <li><a href="#"></a>Portfolio</li>
+                    <li><a href="#"></a>Contact</li>
+                </ul>
+            </nav>
+            <div class="headr-text"><br>
+                <br>
+                <p>Web Developer</p>
+                <h1 >Hi, I'm <span>Kavindu</span>  <br> Maduranga</h1>
+            </div>
+        </div>
+    </div>
+
+
+<!--============About=============-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/About me 123.jpeg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"  >About me</h1>
+                    <p>
+                        Hey, I'm Kavidu Maduranga, I'm currently a student, but I'm a student with good experience in web development. I hope my skills will help you
+                    
+                    
+                    
+                    </p>
+                    <div class="tag-tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')" >Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills" >
+                        <ul>
+                            <li><span>UI/UX</span><br>Desing Website</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desing Website</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desing Website</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building android/ios apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tablinks = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablink){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontent){
+            tabcontent.classlist.remove("active-tab");
+        }
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
